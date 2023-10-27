@@ -1,0 +1,18 @@
+{%load static%}
+
+<link rel="stylesheet" href="{% static 'app/styles.css' %}">
+<script src="{% static 'app/scripts.js' %}" type="text/javascript"></script>
+<script src="{% static 'app/jquery.js' %}" type="text/javascript"></script>
+
+<div class = content-container>
+    <h1>Product Powertools</h1>
+    <div class = 'conversation-space' id = 'conversation-space'>
+
+    </div>
+    <div class = 'input-space'>
+        <div class = inputs>
+            <textarea class='input' id='input' placeholder="Prompt"></textarea>
+        </div>
+        <button class='send-button' onclick="send()">Send</button>
+    </div>
+</div>
