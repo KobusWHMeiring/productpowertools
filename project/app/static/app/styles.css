@@ -26,3 +26,8 @@
 .input{
     width: 100%
 }
+
+.response_message{
+    display: flex;
+    text-wrap: pretty;
+}

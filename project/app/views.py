@@ -13,7 +13,9 @@ def index(request):
 @csrf_exempt
 def prompt(request):
     user_message = request.POST.get('prompt', None)
+    
     prompt = promptconstructor.buildPrompt(user_message)
+    
     response = {"response": openai.chat3turbo(prompt)}
     
     print(response)

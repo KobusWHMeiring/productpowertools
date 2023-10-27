@@ -30,6 +30,7 @@ function displayUserMessage(userMessage){
 function send(){
     
     let prompt_content = document.getElementById("input").value
+    document.getElementById("input").value = ""
     displayUserMessage(prompt_content)
     console.log('prompt content', prompt_content)
     let content = 
